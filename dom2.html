@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+   
+</head>
+<body>
+    <p id="mandira"> Monday</p>
+    <p class="Welcome"> today</p>
+    <p class="Welcome"> today1</p>
+    <p class="Welcome"> today2</p>
+    <! --how to access elements by ID
+-->
+    <script type="text/javascript">
+        var a = document.getElementById("mandira").innerHTML;
+        document.write(a);
+    </script>    
+  
+  <! -- how to access elements by class -->
+   <script type="text/javascript">
+    var b = document.getElementsByClassName("Welcome")[0].innerHTML;
+    document.write(b);
+    </script> 
+    
+    <! -- how to access elements by TagName -->
+    <script type="text/javascript">
+        var tag = document.getElementsByTagName("p");
+        document.write(tag);
+        console.log(tag);
+    </script> 
+    <! -- how to access first element by classname,id,TagName -->
+    <script type="text/javascript">
+        var p = document.querySelector('p').innerHTML;
+        document.write(p);
+       
+    </script>    
+    <br><br>          
+</body>
+</html>
+
+<! --
+//13th line ka object create kia h 
+//id k liie # and class k liye . dikhata h console me
+//innerHTML me id ka content ata h 
+//line 20 pe [0 ] dia h q ki multiple class de skte h lekin id ek hi dena h ...and print krne k liye hume first class use krna jiska index 0 h 
+//line 25th me para pass kia h 
+//queryselector kisi b contect ka fisrt element deta h
+-->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+   
+</head>
+<body>
+    <p id="mandira"> Monday</p>
+    <p class="Welcome"> today</p>
+    <p class="Welcome"> today1</p>
+    <p class="Welcome"> today2</p>
+    
+    <ul><li>like</li>
+        <li>share</li>
+        <li>subscirbe</li></ul>
+
+<!--    access children of a body -->
+    <script type = "text/javascript">
+        var child = document.body.children;
+        console.log(child);
+
+    //new child ko add krna h body me using 2 methods
+    //pehle para tag add krege wo txt node create krege
+        var para = document.createElement("p"); //para bana h toh p dia h
+        var textNode = document.createTextNode("this is a new"); //para me jo content chahiye wo likhna h 
+        para.appendChild(textNode); //para me content add kia h idr
+        console.log(para); //ye pe sirf console me dikhega new para
+
+        document.body.appendChild(para);  //document me body tag me new para dala h
+    
+<!--    access first and last children of a body -->
+
+        var list = document.querySelector("ul");
+        console.log(list);
+
+        //to see first child
+
+        console.log(list.firstChild);
+
+        //to see last child
+        console.log(list.lastChild);
+
+        //first para ka sibling
+        var firstSibling = mandira.nextElementSibling; //ya pe id b use kr skte h
+        console.log(firstSibling);
+
+        //ul ka parent check
+        console.log(list.parentNode); //ul ka prent body h 
+
+
+    </script>
+
+
+<br><br>   
+</body>
+</html>
+
+//line 21 - ye page (document/body) ka jitne b child h unko ek var me dala h 
+//
